@@ -1,7 +1,13 @@
 # import requests
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+api_key = os.getenv("WEATHER_API_KEY")
+
 
 city = "London"
-api_key = "b552cfe4d458442296475614251504"  # Replace with your actual WeatherAPI.com API key
 url = f"http://api.weatherapi.com/v1/current.json?key={api_key}&q={city}&aqi=no"
 
 # response = requests.get(url)

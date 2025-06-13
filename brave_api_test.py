@@ -1,8 +1,11 @@
 import requests
 import json
+from dotenv import load_dotenv
+import os 
 
-# Your Brave Search API key
-api_key = "BSAKX9fLyuevUrUhSygp_7RCgJWQcsh"
+load_dotenv()
+
+api_key =  os.getenv("BRAVE_API_KEY")
 
 # Set up the request
 headers = {

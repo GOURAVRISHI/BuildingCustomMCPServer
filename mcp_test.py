@@ -2,7 +2,7 @@
 from mcp.server.fastmcp import FastMCP
 
 # Create an MCP server
-mcp = FastMCP("Demo")
+mcp = FastMCP("Demo-CALCI")
 
 
 # Add an addition tool
@@ -12,7 +12,7 @@ def add(a: int, b: int) -> int:
     return a + b
 
 
-# Add a dynamic greeting resource
+# Add a dynamic greeting resource 
 @mcp.resource("greeting://{name}")
 def get_greeting(name: str) -> str:
     """Get a personalized greeting"""
