@@ -1,0 +1,10 @@
+[project]
+name = "custompymcpserver"
+version = "0.1.0"
+description = "Building your own Custom MCP Servers"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "mcp[cli]>=1.6.0",
+    "requests>=2.32.3",
+]
